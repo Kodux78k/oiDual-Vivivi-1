@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pwa-vivivi-cód-v1';
+const CACHE_NAME = 'pwa-vivivi-v0';
 const ASSETS = [
     './',
     'index.html',
