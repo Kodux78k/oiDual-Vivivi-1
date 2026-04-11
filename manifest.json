@@ -1,11 +1,11 @@
 {
-  "name": "ViViVi - Códex Arquétipos & Haski",
-  "short_name": "ViViVi",
+  "name": "Feeling Decor - Códex Arquétipos & Haski",
+  "short_name": "Feeling decor.",
   "description": "",
   "lang": "pt-BR",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#000",
   "theme_color": "#2563eb",
   "orientation": "any",
   "icons": [
