@@ -1,0 +1,42 @@
+
+
+
+{
+  "title": "Feeling Decor · Curadoria Sensorial",
+  "categories": [
+    {
+      "cat": "🌿 Projetos · Alma do Espaço",
+      "vids": [
+        "https://kodux78k.github.io/oiDual-Vivivi-1/media/portifolio/Feeling-respira-0.MP4",
+        "https://kodux78k.github.io/oiDual-Vivivi-1/media/destaque/apt.mp4",
+        "https://www.youtube.com/embed/koKhjQKGJSc",
+        "https://www.youtube.com/embed/KrtOVrk8aDk"
+      ]
+    },
+    {
+      "cat": "✨ Conceito · Fluidez Intencional",
+      "vids": [
+        "https://kodux78k.github.io/oiDual-Vivivi-1/media/conceito/img1.jpg",
+        "https://kodux78k.github.io/oiDual-Vivivi-1/media/conceito/img2.jpg",
+        "https://kodux78k.github.io/oiDual-Vivivi-1/media/conceito/img3.jpg"
+      ]
+    }
+  ],
+  "podcasts": [
+    {
+      "cat": "🎧 Frequência · Harmonia",
+      "eps": [
+        {
+          "title": "Vibração do Ambiente",
+          "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+          "cover": "https://kodux78k.github.io/oiDual-Vivivi-1/media/portifolio/img5.jpg"
+        },
+        {
+          "title": "Meditação Guiada",
+          "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+          "cover": "https://kodux78k.github.io/oiDual-Vivivi-1/media/portifolio/img4.jpg"
+        }
+      ]
+    }
+  ]
+}
