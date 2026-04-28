@@ -1,0 +1,77 @@
+<script>
+(function(){
+  const STORAGE_KEY = "di_cortina_paz_v1";
+  const FX_BG = "https://kodux78k.github.io/oiDual-Vivivi-1/media/portifolio/img5.jpg";
+
+  function save(state){
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }
+
+  function load(){
+    try{
+      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || false;
+    }catch(e){
+      return false;
+    }
+  }
+
+  function applyCortina(){
+    const bg = document.getElementById("bg-layer-fixed");
+    if(!bg) return;
+
+    // IMPORTANTE: usa o próprio sistema
+    if(window.updateBgAttr){
+      updateBgAttr('opacity', 18);
+      updateBgAttr('blend', 'multiply');
+    }
+
+    bg.style.backgroundImage = `url('${FX_BG}')`;
+
+    const status = document.getElementById('bgStatusText');
+    if(status) status.textContent = "Cortina";
+  }
+
+  function removeCortina(){
+    if(window.applyPreset){
+      applyPreset("vivid"); // volta pro estado padrão do engine
+    }
+  }
+
+  function init(){
+    let state = load();
+
+    // 🔥 roda DEPOIS do engine
+    setTimeout(()=>{
+      if(state) applyCortina();
+    }, 200);
+
+    const btn = document.getElementById("btn-cortina-paz");
+
+    if(btn){
+      btn.addEventListener("click", ()=>{
+        state = !state;
+
+        if(state){
+          applyCortina();
+        } else {
+          removeCortina();
+        }
+
+        save(state);
+        updateUI(btn, state);
+      });
+
+      updateUI(btn, state);
+    }
+  }
+
+  function updateUI(btn, state){
+    if(!btn) return;
+    btn.innerText = state 
+      ? "✨ Cortina Ativa"
+      : "🌙 Ativar Cortina";
+  }
+
+  window.addEventListener("load", init);
+})();
+</script>
