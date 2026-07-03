@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#0b0f14" />
   <title>Feeling Docs • dualInfodose</title>
 
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
 
@@ -380,7 +381,21 @@
       .paper{ box-shadow:none; border-radius:0; max-width:none; padding:0; }
       .page-break-indicator { border: none; margin: 0; break-before: page; page-break-before: always; }
       .page-break-indicator::after { display: none; }
+    }  
+    @media (max-width: 720px){
+      .sidebar-header { padding: 18px; }
+      .tabs { padding: 8px 18px; }
+      .panel { padding: 18px; }
+      .paper-shell { padding: 18px; }
+      .paper{ padding:24px; border-radius:20px; }
+      .paper-top{ flex-direction:column; }
+      .paper-meta{ text-align:left; margin-top:8px; }
+      .info-grid, .row, .row-3, .totals, .signature{ grid-template-columns:1fr; }
+      .table-responsive { border-radius: 14px; }
+      .logo-upload-wrap{ grid-template-columns:1fr; }
     }
+
+   
   </style>
 </head>
 <body data-mode="orcamento">
